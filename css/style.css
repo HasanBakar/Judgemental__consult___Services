@@ -1,0 +1,33 @@
+.my__custom__banner {
+    bottom: 8rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .my__custom__banner {
+        bottom: 1.75rem;
+    }
+
+    .my__custom__banner__text h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .my__custom__banner {
+        bottom: 1rem;
+    }
+
+    .my__custom__banner__text h1 {
+        font-size: 46px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .my__custom__banner {
+        bottom: 0.5rem;
+    }
+
+    .my__custom__banner__text h1 {
+        font-size: 36px;
+    }
+}
