@@ -2,6 +2,25 @@
     bottom: 8rem;
 }
 
+.my__custom_slide__1 {
+    background-image: url("../images/slider-1.jpg");
+    height: 760px;
+}
+
+.my__custom_slide__2 {
+    background-image: url("../images/slider-2.jpg");
+    height: 760px;
+}
+
+.my__custom_slide__3 {
+    background-image: url("../images/slider-3.jpg");
+    height: 760px;
+}
+
+.my__custom__carousel_inside_image {
+    height: 150px;
+}
+
 @media screen and (max-width: 1024px) {
     .my__custom__banner {
         bottom: 1.75rem;
