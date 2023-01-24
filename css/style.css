@@ -1,5 +1,5 @@
 .my__custom__banner {
-    bottom: 8rem;
+    bottom: 5rem;
 }
 
 .my__custom_slide__1 {
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1024px) {
     .my__custom__banner {
-        bottom: 1.75rem;
+        bottom: 7rem;
     }
 
     .my__custom__banner__text h1 {
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 768px) {
     .my__custom__banner {
-        bottom: 1rem;
+        bottom: 6.5rem;
     }
 
     .my__custom__banner__text h1 {
@@ -43,10 +43,12 @@
 
 @media screen and (max-width: 640px) {
     .my__custom__banner {
-        bottom: 0.5rem;
+        bottom: 5.5rem;
     }
 
     .my__custom__banner__text h1 {
         font-size: 36px;
     }
+
+
 }
