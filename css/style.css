@@ -42,6 +42,7 @@
 }
 
 @media screen and (max-width: 640px) {
+
     .my__custom__banner {
         bottom: 5.5rem;
     }
