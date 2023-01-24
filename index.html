@@ -17,6 +17,11 @@
     <script src="https://kit.fontawesome.com/50b7123961.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function toggleModal() {
+            document.getElementById('modal').classList.toggle('hidden')
+        }
+    </script>
 
 </head>
 
@@ -31,9 +36,45 @@
                         <img src="/images/logo2.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                     </a>
                     <div class="flex md:order-2">
-                        <button type="button"
+                        <button type="button" onclick="toggleModal()"
                             class="text-white bg-yellow-600 hover:bg-yellow-800 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Free
                             consultation</button>
+
+                        <!-- modal section part start-->
+                        <section>
+                            <div class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
+                                <div
+                                    class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                                    <div class="fixed inset-0 transition-opacity">
+                                        <div class="absolute inset-0 bg-gray-900 opacity-75">
+                                        </div>
+                                        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                                        <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                                            role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                                            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                                                <h3 class="text-3xl font-extrabold">Please fill up the form below</h3>
+                                                <p>For consultation appointment</p>
+                                                <label>Name</label>
+                                                <input type="text" class="w-full bg-gray-100 p-2 mt-2 mb-3" />
+                                                <label>Email Address</label>
+                                                <input type="email" class="w-full bg-gray-100 p-2 mt-2 mb-3" />
+                                                <label>Phone number</label>
+                                                <input type="number" class="w-full bg-gray-100 p-2 mt-2 mb-3" />
+                                            </div>
+                                            <div class="bg-gray-200 px-4 py-3 text-right">
+                                                <button type="button"
+                                                    class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
+                                                    onclick="toggleModal()"><i class="fas fa-times"></i> Cancel</button>
+                                                <button type="button" onclick="toggleModal()"
+                                                    class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"><i
+                                                        class="fas fa-plus"></i> Create</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- modal section part end-->
+
                         <button data-collapse-toggle="navbar-sticky" type="button"
                             class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                             aria-controls="navbar-sticky" aria-expanded="false">
